@@ -30,7 +30,7 @@ describe('phoneService', () => {
 
   it('should call findOne', async () => {
     const fakeId = 1;
-    database.Phone.findOne.mockResolvedValue([phone]);
+    database.Phone.findOne.mockResolvedValue(phone);
     await phoneService.getById(fakeId);
     expect(database.Phone.findOne).toHaveBeenCalledWith({
       where: {
