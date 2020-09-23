@@ -16,7 +16,7 @@
   npm test
   ```
 
-* Run DB in docker
+* Run DB in docker detached
 
   ```shell
   docker-compose up -d
@@ -36,6 +36,7 @@
   It will add a few phone numbers for User of id 1 and one user with no phone with id 2
     
   ```
+  
 
 * Start server
 
