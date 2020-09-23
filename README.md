@@ -65,7 +65,16 @@
  ```
   
   ### One phone GET  /phones/:id
-  
+  ```javascript
+    {
+            "id": 2,
+            "isActive": false,
+            "phoneNumber": "0456556545",
+            "userId": 1,
+            "createdAt": "2020-09-23T06:26:56.134Z",
+            "updatedAt": "2020-09-23T06:26:56.134Z"
+    },  
+  ```
   
   ### Activate phone PATCH  /phones/:id
   Handler sets isActive to true always
