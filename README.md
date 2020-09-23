@@ -19,7 +19,7 @@
 * Run DB in docker
 
   ```shell
-  docker-compose up
+  docker-compose up -d
   ```
 
 * Run migrations
