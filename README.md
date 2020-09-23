@@ -108,5 +108,12 @@
             },
     }
   ```
-  
-  
+
+
+## Things missing/to improve
+
+- Anyone can update a phone
+- Validation middleware for model properties
+- Authentication
+- Use string query to limit data
+- Swagger
