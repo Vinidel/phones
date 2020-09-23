@@ -1,0 +1,33 @@
+{
+  "name": "phones",
+  "version": "1.0.0",
+  "description": "Code challenge for Belong",
+  "main": "server.js",
+  "scripts": {
+    "db:init": "sequelize-cli init",
+    "db:create:user": "sequelize-cli model:generate --name User --attributes name:string",
+    "db:create:phone": "sequelize-cli model:generate --name Phone --attributes isActive:boolean,phoneNumber:string,userId:integer",
+    "db:seed:generate:phone": "sequelize-cli seed:generate --name phone",
+    "db:seed:generate:user": "sequelize-cli seed:generate --name user",
+    "db:seed:all": "sequelize-cli db:seed:all",
+    "db:migrate": "sequelize-cli db:migrate",
+    "start:dev": "nodemon ./server/server.js",
+    "test": "jest --config ./jest.config.js"
+  },
+  "author": "Vinny Delascio",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.3.3",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4"
+  }
+}
