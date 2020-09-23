@@ -50,8 +50,9 @@
   ```
 
  ## Routes
-  ### All phones GET  /phones
+  ### Get all phones
   ```javascript
+    GET  http://localhost:3000/phones
     [
         {
             "id": 2,
@@ -64,8 +65,9 @@
     ]
  ```
   
-  ### One phone GET  /phones/:id
+  ### One phone by id
   ```javascript
+    GET  http://localhost:3000/phones/:id
     {
             "id": 2,
             "isActive": false,
@@ -76,17 +78,19 @@
     },  
   ```
   
-  ### Activate phone PATCH  /phones/:id
+  ### Activate phone
   Handler sets isActive to true always
   ``` Javascript
+    PATCH http://localhost:3000/phones/:id
     {
         "isActive": true
     }
   ```
   
-  ### User phones GET users/:id
+  ### User phones
   Response
   ``` Javascript
+     GET http://localhost:3000/users/:id
     {
         "id": 1,
         "name": "Vinny Del",
